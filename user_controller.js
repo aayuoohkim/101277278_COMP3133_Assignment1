@@ -1,4 +1,4 @@
-const user_model = require("../models/user_schema");
+const user_model = require("./models/user_schema");
 
 exports.login = async args => {
     let user = await user_model.findOne({ username: args.username });
