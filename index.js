@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const graphql = require("./graphql");
+app.use("/graphql", graphql);
 
 const DB =
     "mongodb+srv://Yoonhee:0407xoxKyh@comp3123-assignment1.6vngmmc.mongodb.net/assignment1";
